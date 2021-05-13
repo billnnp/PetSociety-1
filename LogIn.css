@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+
+    background: #E4D99E;
+
+    font-family: "Roboto Condensed21382017", sans-serif;
+}
+.imgBG .pic1{
+    position: absolute;
+
+}
+.imgBG .pic2{
+    position: absolute;
+    width: 262px;
+    height: 320px;
+    left: 1175px;
+    top: 580px;
+    
+}
+.imgBG .pic3{
+    position: absolute;
+    width: 174px;
+    height: 131px;
+    left: -40px;
+    top: 600px;
+    
+}
+.imgBG .pic4{
+    position: absolute;
+    width: 174px;
+    height: 131px;
+    left: 1266px;
+    top: 216px;
+    
+}
+.Title{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 600px;
+    top: 95px;
+    z-index: 100;
+}
+hr{
+    position: absolute;
+    border: none;
+    width: 715px;
+    height: 557px;
+    left: 376px;
+    top: 150px;
+    
+
+    background: #BF764C;
+    border-radius: 58px;
+}
+input{
+    border: none;
+    
+    width: 395px;
+    height: 70px;
+
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.uername .usern {
+    position: absolute;
+    left: 550px;
+    top: 300px;
+
+}
+.dataUserN{
+    position: absolute;
+    width: 320px;
+    height: 68px;
+    left: 580px;
+    top: 250px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.5);
+
+}
+.passW .passw{
+   
+    position: absolute;
+    left: 550px;
+    top: 450px;
+}
+.datapass{
+    position: absolute;
+    width: 320px;
+    height: 68px;
+    left: 580px;
+    top: 400px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.5);
+
+}
+:placeholder-shown{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.24);
+
+}
+button{
+    border: none;
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    left: 680px;
+    top: 530px;
+    margin-top: 60px;
+    color: #BF764C;
+    background: #E0A538;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 70px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #df950c;
+    color: #bb5519;
+    width: 160px;
+    height: 70px;
+}

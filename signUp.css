@@ -1,0 +1,546 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Condensed21382017", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  position: relative;
+  width: 1152px;
+  height: 700px;
+
+  background: #e4d99e;
+}
+.right {
+  position: absolute;
+  left: 250px;
+  margin-top: 30px;
+}
+.Title {
+  position: absolute;
+  width: 306px;
+  height: 107px;
+  left: 628px;
+  top: 1px;
+}
+.inputBoxfname span {
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  left: 600px;
+  top: 90px;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.inputBoxlname span {
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  left: 810px;
+  top: 90px;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.inputBoxfname .fname {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: 585px;
+  top: 136px;
+
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.inputBoxlname .lname {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: 795px;
+  top: 136px;
+
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.pet {
+  margin-top: 10px;
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  left: 600px;
+  top: 233px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.inputBox-pet {
+  margin-top: 232px;
+  padding: 32px;
+}
+.select-box {
+  display: flex;
+  width: 200px;
+  margin-left: 553px;
+  margin-top: 72px;
+  flex-direction: column;
+}
+.select-box .options-pet {
+  background: #ffffff;
+  color: black;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 100;
+
+  order: 1;
+}
+.selected {
+  margin-top: 15px;
+  color: rgb(87, 85, 85);
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: 585px;
+  top: 278px;
+
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  order: 0;
+}
+.selected::after {
+  content: "";
+  background: url(./Images/SignUp/down-arrow.svg);
+  background-size: 20px;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 5px;
+
+  transition: all 0.4s;
+}
+.select-box .options-pet.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+.select-box .options-pet.active + .selected::after {
+  transform: rotateX(180deg);
+  top: -6px;
+}
+.select-box .options-pet ::-webkit-scrollbar {
+  width: 8px;
+  background: #456252;
+  border-radius: 0 30px 30px 0;
+}
+.select-box .options-pet::-webkit-scrollbar-thumb {
+  background: #bf764c;
+  border-radius: 0 30px 30px 0;
+}
+.select-box .option,
+.selected {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.select-box .option:hover {
+  background: #dad8d8;
+}
+.select-box label {
+  cursor: pointer;
+}
+.select-box .option .radio {
+  display: none;
+}
+input {
+  border: none;
+}
+input:placeholder-shown {
+  text-align: center;
+}
+.BT1 button {
+  border: none;
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  left: 720px;
+  top: 630px;
+  margin-top: 60px;
+  color: #bf764c;
+  background: #e0a538;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 70px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+.BT1 button:hover {
+  background-color: #df950c;
+  color: #bb5519;
+  width: 160px;
+  height: 50px;
+}
+.BT2 button {
+  border: none;
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  left: 50px;
+  top: 604px;
+  margin-top: 120px;
+  color: #456252;
+  background: #bf764c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+.BT2 button:hover {
+  background-color: #be6734;
+  color: #36644b;
+  /* width: 160px;
+    height: 50px; */
+}
+.genger_title {
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  left: 600px;
+  top: 171px;
+
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmarkM {
+  position: absolute;
+  top: 222px;
+  left: 615px;
+  height: 25px;
+  width: 25px;
+  margin-top: -225px;
+  background-color: #eee;
+  border-radius: 50%;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.checkmarkF {
+  position: absolute;
+  top: 222px;
+  left: 725px;
+  height: 25px;
+  width: 25px;
+  margin-top: -225px;
+  background-color: #eee;
+  border-radius: 50%;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmarkM {
+  background-color: #ccc;
+}
+.container:hover input ~ .checkmarkF {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmarkM {
+  background-color: #456252;
+}
+.container input:checked ~ .checkmarkF {
+  background-color: #456252;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkM:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkmarkF:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmarkM:after {
+  display: block;
+}
+.container input:checked ~ .checkmarkF:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.container .checkmarkM:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.container .checkmarkF:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.MaleTT {
+  position: absolute;
+  width: 51px;
+  height: 33px;
+  left: 570px;
+  top: 218px;
+  margin-top: -225px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+.FemaleTT {
+  position: absolute;
+  width: 51px;
+  height: 33px;
+  left: 662px;
+  top: 218px;
+  margin-top: -225px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+.inputBoxBD input {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: 795px;
+  top: 214px;
+
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.HBD {
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  left: 805px;
+  top: 165px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.inputBoxemail input {
+  position: absolute;
+  width: 395px;
+  height: 40px;
+  left: 587px;
+  top: 356px;
+  margin-top: 20px;
+
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.dataE {
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  left: 600px;
+  top: 308px;
+  margin-top: 20px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.inputBoxusername input {
+  position: absolute;
+  width: 395px;
+  height: 40px;
+  left: 587px;
+  top: 424px;
+  margin-top: 30px;
+
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+}
+
+.dataU {
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  left: 600px;
+  top: 375px;
+  margin-top: 30px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.inputBoxpass input {
+  position: absolute;
+  width: 395px;
+  height: 40px;
+  left: 587px;
+  top: 492px;
+  margin-top: 40px;
+
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.dataP {
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  left: 600px;
+  top: 444px;
+  margin-top: 40px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.inputBoxconfirmpass input {
+  position: absolute;
+  width: 395px;
+  height: 40px;
+  left: 587px;
+  top: 560px;
+  margin-top: 50px;
+
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.dataC {
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  left: 600px;
+  top: 512px;
+  margin-top: 50px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+.pic1 {
+  height: 100vh;
+}
+.pic2 {
+  height: 663.3px;
+  width: 700px;
+  position: absolute;
+
+  left: 40px;
+  top: 20px;
+}
+.pic3 {
+  position: absolute;
+  width: 154px;
+  height: 160px;
+  left: 1037px;
+
+  top: 465px;
+}

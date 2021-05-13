@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+body {
+  color: #456252;
+  background: #e4d99e;
+}
+
+.Profile {
+  margin: 2%;
+}
+
+.head {
+  /* display: block; */
+  font-size: 50pt;
+  text-align: center;
+  font-weight: bolder;
+  position: absolute;  
+}
+
+.BGhead > img{
+  width: 80%;
+  padding-top: 5%;
+  display: block;
+  text-align: center;
+  margin: auto auto;
+}
+
+.ProfilePic{
+  position: absolute;
+}
