@@ -5,26 +5,72 @@ body {
   background: #e4d99e;
 }
 
-.Profile {
-  margin: 2%;
-}
-
 .head {
   /* display: block; */
   font-size: 50pt;
   text-align: center;
   font-weight: bolder;
-  position: absolute;  
+  position: relative;  
+  /* margin: auto; */
+  z-index: 200;
 }
 
-.BGhead > img{
+img{
   width: 80%;
-  padding-top: 5%;
+  margin: auto;
   display: block;
   text-align: center;
-  margin: auto auto;
+  z-index: 100;
 }
 
 .ProfilePic{
-  position: absolute;
+  width: 20%;
+}
+
+.Name{
+  text-align: center;
+}
+
+#PetDetail{
+  background-color: #BF764C;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 2%;
+}
+
+#UserDetail{
+  text-align: left;
+  background-color: #BF764C;
+  padding: 5%;
+  padding-top: 10%;
+}
+
+.PetPic1{
+  width: 80%;
+}
+
+.PetPic2{
+  width: 80%;
+}
+
+.PetPic3{
+  width: 80%;
+}
+
+.icon{
+  width: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#H_Username{
+  background-color: #DECDB4;
+}
+
+#P_Username{
+  background-color: #EADFCF;
+}
+
+hr{
+  border: #BF764C solid;
 }
