@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#E4D99E;
+    font-family:"Roboto Condensed21382017",sans-serif;
+}
+.left .tag{
+    position: absolute;
+    width: 273px;
+    height: 620px;
+    left: 37px;
+    top: 78px;
+
+    background: #BF764C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    
+}
+.ImgProfile{
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    left: 121px;
+    top: 84px;
+    border-radius: 100%;
+
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h1{
+    position: absolute;
+    width: 224px;
+    height: 37px;
+    left: 70px;
+    top: 195px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    display: flex;
+    color: #FFFFFF;
+}
+.Followers {
+    position: absolute;
+    width: 53px;
+    height: 24px;
+    left: 100px;
+    top: 260px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    
+    display: flex;
+
+    color: #FFFFFF;
+}
+.count{
+    position: absolute;
+    width: 76px;
+    height: 18px;
+    left: 150px;
+    top: 255px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    
+    display: flex;
+
+    color: #FFFFFF;
+}
+.feed{
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    left: 72px;
+    top: 317px;
+   
+}
+.user{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 72px;
+    top: 378px; 
+}
+.chat{
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    left: 72px;
+    top: 442px;
+}
+a :link{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
