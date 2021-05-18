@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(/NewPetS/PetSociety/font/RobotoCondensed-Regular.ttf)
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -9,7 +14,7 @@ body{
 
     background: #E4D99E;
 
-    font-family: "Roboto Condensed21382017", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 .imgBG .pic1{
     position: absolute;

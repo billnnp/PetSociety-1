@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
+@font-face {
+    font-family: "Roboto";
+    src: url(/NewPetS/PetSociety/font/RobotoCondensed-Regular.ttf)
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
 }
 body{
     background:#E4D99E;
-    font-family:"Roboto Condensed21382017",sans-serif;
+    font-family:"Roboto",sans-serif;
     height: 200vh;
 }
 .left .tag{
@@ -35,7 +40,7 @@ h1{
     position: absolute;
     width: 224px;
     height: 37px;
-    left: 70px;
+    left: 85px;
     top: 195px;
 
     text-align: center;
@@ -189,6 +194,7 @@ a:hover{
     left: 400px;
     top: 75px;
 }
+
 .NameUser{
     position: absolute;
     font-weight: bold;
