@@ -1,7 +1,13 @@
-const { rejects } = require('assert/strict');
+const express = require('express');
+const app = express();
 const mysql = require('mysql'); 
-const { resolve } = require('node:path');
-const { promises } = require('node:stream');
+const port = 3003;
+const hostname = "localhost";
+const bodyParser = require('body-parser');
+
+app.use(express.static(__dirname));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
 
 const con = mysql.createConnection({
     host: "localhost",
@@ -17,11 +23,10 @@ con.connect(err => {
     }
 })
 
-
 const queryDB = (sql) => {
-    return new Promise((resolve,rejects) =>{
+    return new Promise((resolve,reject) =>{
         con.query(sql,(err,result,fields) =>{
-            if(err) rejects(err);
+            if(err) reject(err);
             else 
                 resolve(result)
         })
@@ -38,3 +43,7 @@ app.post('/data',async(req,res) => {
     res.end("New saveed");
 
 })
+
+app.listen(port,hostname,()=>{
+    console.log(`run : http://${hostname}:${port}/signUp.html `)
+});

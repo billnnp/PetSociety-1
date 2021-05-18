@@ -1,3 +1,4 @@
+window.onload = pageLoad;
 const { METHODS } = require("node:http");
 
 const selected = document.querySelector(".selected");
@@ -17,6 +18,18 @@ optionList.forEach(o => {
         optionsPet.classList.remove("active");
     })
 })
+
+//pageload
+function pageLoad(){
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    if(urlParams.get("error") ==1){
+        if(window.location.href.split('/').pop()== "signUp.html"){
+            document.getElementById('errordisplay').innerHTML = "Registration Error!"
+        }
+    }
+}
+
 
 // for send data to DB
 
