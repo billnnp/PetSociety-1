@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap%22");
+body{
+    background: #E4D99E;
+    font-family: "Roboto Condensed21382017",sans-serif;
+}
+.Title{
+    position: absolute;
+    left: 40%;
+    top: 60px;
+    z-index: 100;
+}
+.Rectangle_B{
+    position: absolute;
+    width: 1000px;
+    height: 800px;
+    left: 205px;
+    top: 59px;
+
+    background: #BF764C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    z-index: 0;
+}
+.profile{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 46%;
+    top: 20%;
+    border-radius: 100%;
+
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.edit-profile {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 770px;
+    top: 265px;
+    
+}
+.edit_name p{
+    /* font-family: Roboto Condensed21382017; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+
+    color: #FFFFFF;
+}
+.edit_name {
+    position: absolute;
+    width: 563px;
+    height: 76px;
+    left: 449px;
+    top: 321px;
+    border: none;
+
+    background: #E0A538;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+.edit-namee{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 980px;
+    top: 365px;
+    z-index: 100;
+    
+}
+.edit{
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    margin-left: 980px;
+    top: 369px;
+
+}
+
+.box-1{
+    position: absolute;
+    width: 346px;
+    height: 62px;
+
+    left: 780px;
+    top: 450px;
+    background: rgba(222, 205, 180, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+.box-1 img{
+    position: relative;
+    width: 30px;
+    left:20px;
+    top: 15px;
+}
+.box-1> p{
+    position: absolute;
+    /* font-family: Roboto Condensed21382017; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    top: 20px;
+    left: 100px;
+
+    color: #456252;
+}
+
+.edit-1{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 1090px;
+    top: 470px;
+}
+
+.box-2{
+    position: absolute;
+    width: 346px;
+    height: 62px;
+
+    left: 780px;
+    top: 540px;
+    background: rgba(222, 205, 180, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    z-index: 100;
+}
+.box-2 img{
+    position: relative;
+    width: 30px;
+    left:20px;
+    top: 15px;
+}
+.box-2> p{
+    position: absolute;
+    /* font-family: Roboto Condensed21382017; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    top: 20px;
+    left: 100px;
+
+    color: #456252;
+}
+
+.edit-2{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 1090px;
+    top: 560px;
+    z-index: 100;
+}
+.box-3{
+    position: absolute;
+    width: 346px;
+    height: 62px;
+
+    left: 780px;
+    top: 640px;
+    background: rgba(222, 205, 180, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    z-index: 100;
+}
+.box-3 img{
+    position: relative;
+    width: 30px;
+    left:20px;
+    top: 15px;
+}
+.box-3> p{
+    position: absolute;
+    /* font-family: Roboto Condensed21382017; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    top: 20px;
+    left: 100px;
+
+    color: #456252;
+}
+.edit-3{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 1090px;
+    top: 660px;
+    z-index: 100;
+}
+
+hr{
+    position: absolute;
+    width: 0px;
+    height: 440px;
+    padding-left: 0px;
+    left: 720px;
+    top: 410px;
+
+    border: 1px solid #00000077;
+
+}
+.pic1{
+    position: absolute;
+    width:80px;
+    height:80px;
+    left: 260px;
+    top: 455px;
+    z-index: 100;
+    
+}
+.box1{
+    position: absolute;
+    width: 300px;
+    height: 84px;
+    left: 350px;
+    top: 450px;
+    
+    background: rgba(234, 223, 207, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+.box1 p{
+    /* font-family: Roboto Condensed21382017; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-left: 20px;
+
+    color: #456252;
+}
+.edit--1{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 620px;
+    top: 503px;
+    z-index: 100;
+}
+.pic2{
+    position: absolute;
+    width:80px;
+    height:80px;
+    left: 260px;
+    top: 555px;
+    z-index: 100;
+    
+}
+.box2{
+    position: absolute;
+    width: 300px;
+    height: 84px;
+    left: 350px;
+    top: 550px;
+    
+    background: rgba(234, 223, 207, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+.box2 p{
+    /* font-family: Roboto Condensed21382017; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-left: 20px;
+
+    color: #456252;
+}
+.edit--2{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 620px;
+    top: 603px;
+    z-index: 100;
+}
+.Plus{
+    position: absolute;
+    top: 700px;
+    left: 280px;
+    z-index: 100;
+}
