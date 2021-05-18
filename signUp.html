@@ -13,7 +13,7 @@
     <div class="right">
         <div class="container_form">
             <div class="Title"><img src="./Images/SignUp/Group 1.svg" alt="Sign Up"></div>
-            <form action="data">
+            <form action="/data">
                 <div class="Input_signUp">
                     <div class="inputBoxfname">
                         <span class="data">First Name</span>
@@ -23,14 +23,15 @@
                         <span class="data">Last Name</span>
                         <input class="lname" type="text" name="Lname" placeholder="Enter your last name." required>
                     </div>
+                    <!-- Gender -->
                     <div class="gender">
                         <span class="genger_title">Gender</span>
                         <label class="container"> <span class="MaleTT">Male</span>
-                            <input type="radio" checked="checked" name="radio">
+                            <input type="radio" checked="checked" name="radio" value="Male" onchange="selectgender(this.value)">
                             <span class="checkmarkM"></span>
                         </label>
                         <label class="container"> <span class="FemaleTT">Female</span>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio" value="Male" onchange="selectgender(this.value)">
                             <span class="checkmarkF"></span>
                         </label>
                     </div>
@@ -47,47 +48,47 @@
 
 
                                 <div class="option">
-                                    <input type="radio" class="radio" name="category-pet" id="dog">
+                                    <input type="radio" class="radio" name="category-pet" id="dog" value="dog" onchange="selectpet(this.value)">
                                     <label for="Dog">Dog</label>
                                 </div>
 
                                 <div class="option">
-                                    <input type="radio" class="radio" name="category-pet" id="cat">
+                                    <input type="radio" class="radio" name="category-pet" id="cat" value="cat" onchange="selectpet(this.value)">
                                     <label for="Cat">Cat</label>
                                 </div>
 
                                 <div class="option">
-                                    <input type="radio" class="radio" name="category-pet" id="fish">
+                                    <input type="radio" class="radio" name="category-pet" id="fish" value="fish" onchange="selectpet(this.value)">
                                     <label for="Fish">Fish</label>
                                 </div>
 
                                 <div class="option">
-                                    <input type="radio" class="radio" name="category-pet" id="guinea">
+                                    <input type="radio" class="radio" name="category-pet" id="guinea" value="guinea" onchange="selectpet(this.value)">
                                     <label for="Guinea">Guinea Pig</label>
                                 </div>
 
                                 <div class="option">
-                                    <input type="radio" class="radio" name="category-pet" id="hamster">
+                                    <input type="radio" class="radio" name="category-pet" id="hamster" value="hamster" onchange="selectpet(this.value)">
                                     <label for="Hamster">Hamster</label>
                                 </div>
 
                                 <div class="option">
-                                    <input type="radio" class="radio" name="category-pet" id="rabbit">
+                                    <input type="radio" class="radio" name="category-pet" id="rabbit" value="rabbit" onchange="selectpet(this.value)">
                                     <label for="Rabbit">Rabbit</label>
                                 </div>
 
                                 <div class="option">
-                                    <input type="radio" class="radio" name="category-pet" id="bird">
+                                    <input type="radio" class="radio" name="category-pet" id="bird" value="bird" onchange="selectpet(this.value)">
                                     <label for="Bird">Bird</label>
                                 </div>
 
                                 <div class="option">
-                                    <input type="radio" class="radio" name="category-pet" id="squirrel">
+                                    <input type="radio" class="radio" name="category-pet" id="squirrel" value="squirrel" onchange="selectpet(this.value)">
                                     <label for="Squirrel">Squirrel</label>
                                 </div>
 
                                 <div class="option">
-                                    <input type="radio" class="radio" name="category-pet" id="other">
+                                    <input type="radio" class="radio" name="category-pet" id="other" value="other" onchange="selectpet(this.value)">
                                     <label for="Other">Other</label>
                                 </div>
 
