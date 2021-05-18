@@ -1,11 +1,16 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(/NewPetS/PetSociety/font/RobotoCondensed-Regular.ttf)
+}
+
 *{
     margin: 0;
     padding: 0;
 }
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap%22");
+
 body{
     background: #E4D99E;
-    font-family: "Roboto Condensed21382017",sans-serif;
+    font-family: "Roboto",sans-serif;
 }
 .Title{
     position: absolute;

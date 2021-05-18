@@ -3,6 +3,12 @@
 body {
   color: #456252;
   background: #e4d99e;
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-2{
+  background-color: black;
 }
 
 .head {
@@ -13,6 +19,16 @@ body {
   position: relative;  
   /* margin: auto; */
   z-index: 200;
+}
+
+.BGhead{
+  background-color: #BF764C;
+  margin-right: -1%;
+  margin-left: -1%;  
+  padding-top: 1%;
+  padding-bottom: 4%;
+  padding-right: 2%;
+  border-radius: 40px 40px 0px 0px;
 }
 
 img{
@@ -32,8 +48,7 @@ img{
   text-align: center;
 }
 
-#PetDetail{
-  
+#PetDetail{  
   background-color: #BF764C;
   padding-top: 1%;
   padding-bottom: 1%;
