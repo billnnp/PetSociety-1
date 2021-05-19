@@ -69,16 +69,21 @@ function pageLoad(){
 
       var createbox = document.createElement("div");
       createbox.className = "SocialBox"
+
       divTag.appendChild(createbox);
-      var txtinnerbox = document.createElement("div");
-      txtinnerbox.className = "postmessage";
-      txtinnerbox.innerHTML = data[keys[i]]["post"];
-      createbox.appendChild(txtinnerbox);
-      
       var name = document.createElement("h5");
       name.className = "name";
       name.innerHTML = data[keys[i]]["username"];
       createbox.appendChild(name);
+
+      var txtinnerbox = document.createElement("div");
+      txtinnerbox.className = "postmessage";
+
+      txtinnerbox.innerHTML = data[keys[i]]["post"];
+      
+      createbox.appendChild(txtinnerbox);
+      
+      
 
 
       // var temp = document.createElement("div");
