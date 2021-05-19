@@ -18,14 +18,14 @@ body{
 }
 .imgBG .pic1{
     position: absolute;
+    width: 30%;
 
 }
 .imgBG .pic2{
     position: absolute;
-    width: 262px;
-    height: 320px;
-    left: 1175px;
-    top: 580px;
+    width: 50%;
+    left: 1242px;
+    top: 520px;
     
 }
 .imgBG .pic3{
@@ -78,7 +78,7 @@ input{
 .uername .usern {
     position: absolute;
     left: 550px;
-    top: 55%;
+    top: 238px;
     
 
 }
@@ -92,7 +92,7 @@ input{
     width: 320px;
     height: 68px;
     left: 580px;
-    top: 44%;
+    top: 180px;
     z-index: 100;
 
     font-style: normal;
@@ -110,14 +110,18 @@ input{
    
     position: absolute;
     left: 550px;
-    top: 80%;
+    top: 360px;
+}
+.passw{
+    font-size: 30px;
+    text-align: center;
 }
 .datapass{
     position: absolute;
     width: 320px;
     height: 68px;
     left: 580px;
-    top: 69%;
+    top: 300px;
 
     font-style: normal;
     font-weight: normal;
@@ -142,14 +146,14 @@ input{
     color: rgba(0, 0, 0, 0.24);
 
 }
-button{
+.BT input{
 
     border: none;
     position: absolute;
     width: 150px;
     height: 60px;
     left: 680px;
-    top: 90%;
+    top: 400px;
     margin-top: 60px;
     color: #BF764C;
     background: #E0A538;
@@ -160,7 +164,7 @@ button{
     font-size: 30px;
     cursor: pointer;
 }
-button:hover{
+.BT input:hover{
     background-color: #df950c;
     color: #bb5519;
     width: 160px;
@@ -171,19 +175,16 @@ button:hover{
     position: absolute;
     width: 608.61px;
     height: 248px;
-    left: 100%;
-    top: 115%;
+    left: 445px;
+    top: 516px;
     z-index: 100;
-}
-.User .uername .passW .BT{
-    margin-top: 50px;
 }
 .create span{
     position: absolute;
     width: 205px;
     height: 47px;
     left: 100%;
-    top: 105%;
+    top: 480px;
     
     font-style: normal;
     font-weight: normal;
