@@ -37,7 +37,8 @@ const queryDB = (sql) => {
 }
 
 app.post('/data',async(req,res) => {
-    let sql = "CREATE TABLE IF NOT EXISTS register_for_petsociety.userInfo(fname VARCHAR(50), lname VARCHAR(50), gender VARCHAR(50), bd DATE, Pettype VARCHAR(50), email VARCHAR(50), username VARCHAR(50),password VARCHAR(50), confirmpassword VARCHAR(50))"
+    let sql;
+    sql = "CREATE TABLE IF NOT EXISTS register_for_petsociety.userInfo(fname VARCHAR(50), lname VARCHAR(50), gender VARCHAR(50), bd DATE, Pettype VARCHAR(50), email VARCHAR(50), username VARCHAR(50), password VARCHAR(50), confirmpassword VARCHAR(50))"
     sql = "CREATE TABLE IF NOT EXISTS register_for_petsociety.PostInfo (username VARCHAR(50), post VARCHAR(1000), likecount INT, wowcount INT)"
     let {Fname,Lname,gender,bd,Pettype,email,username,password,confirmpassword} = req.body;
     let result = await queryDB(sql);
@@ -64,13 +65,13 @@ app.post('/checkLogin',async(req,res) =>{
     }
 })
 
-// for Feed 
-app.get("showinfo", async (req,res) =>{
-    let sql = `SELECT fname, lname, email FROM ${userinfo}`;
-    let result = await queryDB(sql);
-    result = Object.assign({},result);
-    res.json(result);
-})
+// // for Feed 
+// app.get("showinfo", async (req,res) =>{
+//     let sql = `SELECT fname, lname, email FROM ${userinfo}`;
+//     let result = await queryDB(sql);
+//     result = Object.assign({},result);
+//     res.json(result);
+// })
 
 app.post('/writepost',async(req,res) =>{
     let posttxt = req.body.post
