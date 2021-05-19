@@ -24,8 +24,10 @@
             <a class="my" href="">My</a>
             <img class="chat" src="./Images/Feed/icons8-chat-60.png" alt="">
             <a class="chatt" href="">Chat</a>
-            <button class="BTPost" type="button" >Post</button>
+            <button class="BTPost" onclick="togglePopup()" >Post</button>
             <img class="BTPost_editIMG" src="./Images/Feed/edit.png" alt="">
+
+            
         
         </div>
     </div>
@@ -39,5 +41,15 @@
     </div>
 
     </div>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">×</div>
+          <textarea placeholder="write something..." name="Post" id="post" cols="30" rows="10"></textarea>
+          <button type="button" >post</button>
+        </div>
+      </div>
+       
 </body>
 </html>
