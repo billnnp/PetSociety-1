@@ -471,3 +471,27 @@ input:placeholder-shown {
   top: 500px;
   
 }
+.fname{
+  text-align: center;
+}
+.lname{
+  text-align: center;
+}
+.inputBoxBD #birthday{
+  text-align: center;
+}
+.inputBox-pet #Pettype{
+  text-align: center;
+}
+.email{
+  text-align: center;
+}
+.username{
+  text-align: center;
+}
+.pass{
+  text-align: center;
+}
+.confirmpass{
+  text-align: center;
+}
