@@ -34,11 +34,14 @@ function pageLoad(){
 // for send data to DB
 
 function selectgender(event){
+    
     gender = event;
+    
 }
 
-function selectpet(event){
-    pet = event;
+function selectpet(){
+    let pet = document.getElementById("Pettype").value;
+    
 
 }
 function onCommit(){

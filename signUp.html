@@ -13,7 +13,7 @@
     <div class="right">
         <div class="container_form">
             <div class="Title"><img src="./Images/SignUp/Group 1.svg" alt="Sign Up"></div>
-            <form action="/data">
+            <form action="/data" method="post" accept-charset="utf-8">
                 <div class="Input_signUp">
                     <div class="inputBoxfname">
                         <span class="data">First Name</span>
@@ -31,7 +31,7 @@
                             <span class="checkmarkM"></span>
                         </label>
                         <label class="container"> <span class="FemaleTT">Female</span>
-                            <input type="radio" name="radio" value="Male" onchange="selectgender(this.value)">
+                            <input type="radio" name="radio" value="Female" onchange="selectgender(this.value)">
                             <span class="checkmarkF"></span>
                         </label>
                     </div>
@@ -40,7 +40,7 @@
                         <input type="date" name="birthday" id="birthday">
                     </div>
                     <div class="inputBox-pet">
-                         <select>
+                         <select onchange="selectpet()" id ="Pettype">
                              <option value="Dog"> Dog </option>
                              <option value="Cat"> Cat </option>
                              <option value="Fish"> Fish </option>
@@ -131,12 +131,12 @@
                     </div>
                     <img src="./Images/SignUp/cut_tree 1.svg" alt="pic3" class="pic3">
 
-                    <input type="submit"> 
+                    <input type="submit" class="BTsign"  value="Sign Up"> 
                 </div>
             </form>
-            <div class="BT1">
+            <!-- <div class="BT1">
                 <button type="button" class="BTsign" action="/data" > <span class="BTsignup">Sign up</span> </button>
-            </div>
+            </div> -->
 
         </div>
     </div>
