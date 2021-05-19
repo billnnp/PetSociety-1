@@ -57,8 +57,16 @@ app.post('/checkLogin',async(req,res) =>{
     }
     else if(userForm == result[0].username && passForm == result[0].password){
         res.cookie('username',userForm)
+        return res.redirect('Feed.html')
         console.log("LogedIn");
     }
+})
+
+app.get("showinfo", async (req,res) =>{
+    let sql = `SELECT fname, lname, email FROM ${userinfo}`;
+    let result = await queryDB(sql);
+    result = Object.assign({},result);
+    res.json(result);
 })
 
 app.listen(port,hostname,()=>{
