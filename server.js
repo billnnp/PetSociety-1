@@ -5,6 +5,7 @@ const port = 3003;
 const hostname = "localhost";
 const bodyParser = require('body-parser');
 const path = require("path");
+var cookieParser = require('cookie-parser');
 
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
@@ -42,8 +43,22 @@ app.post('/data',async(req,res) => {
     let sql = `INSERT INTO register_for_petsociety.userinfo (fname,lname,gender,bd,Pettype,email,username,password,confirmpassword) VALUES ("${Fname}","${Lname}","${gender}","${bd}","${Pettype}","${email}","${username}","${password}","${confirmpassword}")`;
     result = await queryDB(sql);
     console.log("Save");
-    res.end("New saveed");
+    return res.redirect('LogIn.html');
+})
 
+app.post('/checkLogin',async(req,res) =>{
+    let userForm = req.body.username
+    let passForm = req.body.password
+    let sql = `SELECT * FROM register_for_petsociety.userinfo WHERE username = '${userForm}' AND password = '${passForm}'`
+    let result = await queryDB(sql);
+    if(result.length ==0){
+        console.log("false")
+        return res.redirect('LogIn.html')
+    }
+    else if(userForm == result[0].username && passForm == result[0].password){
+        res.cookie('username',userForm)
+        console.log("LogedIn");
+    }
 })
 
 app.listen(port,hostname,()=>{
