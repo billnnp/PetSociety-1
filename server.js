@@ -10,6 +10,7 @@ var cookieParser = require('cookie-parser');
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
+app.use(cookieParser());
 
 const con = mysql.createConnection({
     host: "localhost",
@@ -62,11 +63,31 @@ app.post('/checkLogin',async(req,res) =>{
     }
 })
 
+// for Feed 
 app.get("showinfo", async (req,res) =>{
     let sql = `SELECT fname, lname, email FROM ${userinfo}`;
     let result = await queryDB(sql);
     result = Object.assign({},result);
     res.json(result);
+})
+
+app.post('/writepost',async(req,res) =>{
+    let posttxt = req.body.post
+    let sql = `INSERT INTO register_for_petsociety.postinfo (username, post) VALUES ("${req.cookies.username}", "${posttxt}")`;
+    let result = await queryDB(sql);
+    sql = `SELECT username, post FROM register_for_petsociety.postinfo`;
+    result = await queryDB(sql);
+    result = Object.assign({},result);
+    res.json(result);
+})
+
+
+app.get('/readpost', async(req,res)=>{
+    let sql = `SELECT username, post FROM register_for_petsociety.postinfo`;
+    let result = await queryDB(sql);
+    result = Object.assign({},result);
+    res.json(result);
+
 })
 
 app.listen(port,hostname,()=>{

@@ -18,6 +18,7 @@ function checkcookie(){
         }
 
     }
-    function pageload(){
+    // function pageload(){
 
-    }
+    // }
+}
