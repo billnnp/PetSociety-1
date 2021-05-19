@@ -8,7 +8,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #456252;
-  background-size: 100%;
+  background: 100vh;
   background-color: #e4d99e;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 nav {
   flex: 1;
-  padding-left: 600px;
+  padding-left: 500px;
   padding-top: 20px;
 }
 nav ul li {
@@ -67,7 +67,6 @@ nav ul li a {
 }
 .BTsignup button {
   border: none;
-
   width: 87px;
   height: 39px;
 
