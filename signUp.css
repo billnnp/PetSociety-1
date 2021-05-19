@@ -79,15 +79,12 @@ body {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 }
-.pet {
-  margin-top: 10px;
+.inputBox-pet span{
   position: absolute;
   width: 320px;
   height: 68px;
   left: 600px;
-  top: 233px;
-  font-style: normal;
-  font-weight: normal;
+  top: 250px;
   font-size: 20px;
   line-height: 16px;
   display: flex;
@@ -96,91 +93,18 @@ body {
 
   color: rgba(0, 0, 0, 0.5);
 }
-.inputBox-pet {
-  margin-top: 232px;
-  padding: 32px;
-}
-.select-box {
-  display: flex;
-  width: 200px;
-  margin-left: 553px;
-  margin-top: 72px;
-  flex-direction: column;
-}
-.select-box .options-pet {
-  background: #ffffff;
-  color: black;
-  max-height: 0;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.4s;
-  border-radius: 30px;
-  overflow: hidden;
-  z-index: 100;
-
-  order: 1;
-}
-.selected {
-  margin-top: 15px;
-  color: rgb(87, 85, 85);
+.inputBox-pet select{
   position: absolute;
   width: 200px;
   height: 40px;
-  left: 585px;
-  top: 278px;
 
-  background: #ffffff;
+  background: #FFFFFF;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
-
-  order: 0;
-}
-.selected::after {
-  content: "";
-  background: url(./Images/SignUp/down-arrow.svg);
-  background-size: 20px;
-  margin-top: 5px;
-  background-repeat: no-repeat;
-
-  position: absolute;
-  height: 100%;
-  width: 32px;
-  right: 10px;
-  top: 5px;
-
-  transition: all 0.4s;
-}
-.select-box .options-pet.active {
-  max-height: 240px;
-  opacity: 1;
-  overflow-y: scroll;
-}
-.select-box .options-pet.active + .selected::after {
-  transform: rotateX(180deg);
-  top: -6px;
-}
-.select-box .options-pet ::-webkit-scrollbar {
-  width: 8px;
-  background: #456252;
-  border-radius: 0 30px 30px 0;
-}
-.select-box .options-pet::-webkit-scrollbar-thumb {
-  background: #bf764c;
-  border-radius: 0 30px 30px 0;
-}
-.select-box .option,
-.selected {
-  padding: 12px 24px;
-  cursor: pointer;
-}
-.select-box .option:hover {
-  background: #dad8d8;
-}
-.select-box label {
-  cursor: pointer;
-}
-.select-box .option .radio {
-  display: none;
+  border: none;
+  top: 300px;
+  left: 585px;
+  z-index: 100;
 }
 input {
   border: none;
@@ -188,7 +112,7 @@ input {
 input:placeholder-shown {
   text-align: center;
 }
-.BT1 button {
+.Input_signUp .BT1 input {
   border: none;
   position: absolute;
   width: 150px;
@@ -205,7 +129,7 @@ input:placeholder-shown {
   font-size: 30px;
   cursor: pointer;
 }
-.BT1 button:hover {
+.Input_signUp .BT1 input:hover {
   background-color: #df950c;
   color: #bb5519;
   width: 160px;
@@ -217,7 +141,7 @@ input:placeholder-shown {
   width: 180px;
   height: 60px;
   left: 50px;
-  top: 604px;
+  top: 560px;
   margin-top: 120px;
   color: #456252;
   background: #bf764c;
@@ -253,7 +177,7 @@ input:placeholder-shown {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -272,22 +196,22 @@ input:placeholder-shown {
 /* Create a custom radio button */
 .checkmarkM {
   position: absolute;
-  top: 222px;
+  top: 385px;
   left: 615px;
   height: 25px;
   width: 25px;
-  margin-top: -225px;
+  margin-top: -150px;
   background-color: #eee;
   border-radius: 50%;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .checkmarkF {
   position: absolute;
-  top: 222px;
+  top: 385px;
   left: 725px;
   height: 25px;
   width: 25px;
-  margin-top: -225px;
+  margin-top: -150px;
   background-color: #eee;
   border-radius: 50%;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -348,8 +272,8 @@ input:placeholder-shown {
   width: 51px;
   height: 33px;
   left: 570px;
-  top: 218px;
-  margin-top: -225px;
+  top: 380px;
+  margin-top: -150px;
 
   font-style: normal;
   font-weight: bold;
@@ -366,8 +290,8 @@ input:placeholder-shown {
   width: 51px;
   height: 33px;
   left: 662px;
-  top: 218px;
-  margin-top: -225px;
+  top: 380px;
+  margin-top: -150px;
 
   font-style: normal;
   font-weight: bold;
@@ -541,10 +465,9 @@ input:placeholder-shown {
   top: 20px;
 }
 .pic3 {
-  position:relative;
-  text-align: right;
-  width: 30%;
-  /* right: -55%; */
-  
+  position:absolute;
+  width: 10%;
+  right: -290px;
+  top: 500px;
   
 }
