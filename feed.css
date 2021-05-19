@@ -187,7 +187,9 @@ a:hover{
     position: fixed;
 }
 .SocialBox{
-    position: absolute;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 1000px;
     height: 200px;
     left: 370px;
