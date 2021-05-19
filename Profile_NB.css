@@ -48,14 +48,28 @@ body{
     top: 265px;
     
 }
-.edit_name p{
-    /* font-family: Roboto Condensed21382017; */
+.Name{
+    position: absolute ;
+    width: 224px;
+    height: 37px;
+    left: 180px;
+    top: 15px;
+
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    color: #FFFFFF;
+}
+.Lastname{
+    position: absolute;
+    width: 224px;
+    height: 37px;
+    left: 300px;
+    top: 15px;
 
+    font-style: normal;
+    font-weight: bold;
+    display: flex;
     color: #FFFFFF;
 }
 .edit_name {
@@ -293,4 +307,24 @@ hr{
     top: 700px;
     left: 280px;
     z-index: 100;
+}
+.BTedit{
+    position: absolute;
+    right: 375px;
+    bottom: 0px;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background: #456252;
+    
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    
+
+}
+.BTedit:hover{
+    background: #5d7a69;
 }
