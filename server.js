@@ -35,7 +35,7 @@ const queryDB = (sql) => {
 
 app.post('/data',async(req,res) => {
     let {pettype,gender} = req.body;
-    let sql = "CREATE TABLE IF NOT EXISTS userInfo (fname VAECHAR(50),lname VARCHAR(50),gender VARCHAR(50),bd DATE), pettype VARCHAR(50),email VARCHAR(50),username VAECHAR(50),password VAECHAR(50),confirmpassword VAECHAR(50))";
+    let sql = "CREATE TABLE IF NOT EXISTS userInfo(fname VAECHAR(50), lname VARCHAR(50), gender VARCHAR(50), bd DATE), pettype VARCHAR(50), email VARCHAR(50), username VAECHAR(50), password VAECHAR(50), confirmpassword VAECHAR(50))";
     let result = await queryDB(sql);
     sql = `INSERT INTO userinfo (fname,lname,email,username,password,confirmpassword,pettype,gender) VALUES("${req.body.Fname}","${req.body.Lname}","${req.body.email}","${req.body.username}","${req.body.pass}","${req.body.confirmpass}",${pettype}",${gender}")`;
     result = await queryDB(sql);

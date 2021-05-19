@@ -31,18 +31,14 @@ function pageLoad(){
 }
 
 
-// for send data to DB
+// save data to varchar
 
 function selectgender(event){
-    
     gender = event;
-    
 }
 
 function selectpet(){
     let pet = document.getElementById("Pettype").value;
-    
-
 }
 function onCommit(){
     
