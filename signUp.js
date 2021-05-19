@@ -1,16 +1,15 @@
 window.onload = pageLoad;
-const { METHODS } = require("node:http");
 
 const selected = document.querySelector(".selected");
 const optionsPet = document.querySelector(".options-pet")
 
 const optionList = document.querySelectorAll(".option")
 
-let Gender = "", Pet = "";
+let fname,lname,gender,bd,Pettype,email,username,password,confirmpassword;
 
-selected.addEventListener("click",() => {
-    optionsPet.classList.toggle("active");
-});
+// selected.addEventListener("click",() => {
+//     optionsPet.classList.toggle("active");
+// });
 
 optionList.forEach(o => {
     o.addEventListener("click",() => {
@@ -35,12 +34,14 @@ function pageLoad(){
 
 function selectgender(event){
     gender = event;
+    console.log(gender)
 }
 
 function selectpet(){
+    
     let pet = document.getElementById("Pettype").value;
+    console.log(pet)
 }
 function onCommit(){
-    
-
+   
 }

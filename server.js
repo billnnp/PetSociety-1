@@ -4,6 +4,7 @@ const mysql = require('mysql');
 const port = 3003;
 const hostname = "localhost";
 const bodyParser = require('body-parser');
+const path = require("path");
 
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
@@ -34,10 +35,11 @@ const queryDB = (sql) => {
 }
 
 app.post('/data',async(req,res) => {
-    let {pettype,gender} = req.body;
-    let sql = "CREATE TABLE IF NOT EXISTS userInfo(fname VAECHAR(50), lname VARCHAR(50), gender VARCHAR(50), bd DATE), pettype VARCHAR(50), email VARCHAR(50), username VAECHAR(50), password VAECHAR(50), confirmpassword VAECHAR(50))";
-    let result = await queryDB(sql);
-    sql = `INSERT INTO userinfo (fname,lname,email,username,password,confirmpassword,pettype,gender) VALUES("${req.body.Fname}","${req.body.Lname}","${req.body.email}","${req.body.username}","${req.body.pass}","${req.body.confirmpass}",${pettype}",${gender}")`;
+    
+    let {Fname,Lname,gender,bd,Pettype,email,username,password,confirmpassword} = req.body;
+    // let result = await queryDB(sql);
+    // let sql = `INSERT INTO userinfo (fname,lname,email,username,password,confirmpassword,Pettype,gender,bd) VALUES("${req.body.Fname}","${req.body.Lname}","${req.body.email}","${req.body.username}","${req.body.pass}","${req.body.confirmpass}",${pettype}",${gender}","${req.body.bd}")`;
+    let sql = `INSERT INTO register_for_petsociety.userinfo (fname,lname,gender,bd,Pettype,email,username,password,confirmpassword) VALUES ("${Fname}","${Lname}","${gender}","${bd}","${Pettype}","${email}","${username}","${password}","${confirmpassword}")`;
     result = await queryDB(sql);
     console.log("Save");
     res.end("New saveed");

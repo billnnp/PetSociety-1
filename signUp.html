@@ -27,20 +27,20 @@
                     <div class="gender">
                         <span class="genger_title">Gender</span>
                         <label class="container"> <span class="MaleTT">Male</span>
-                            <input type="radio" checked="checked" name="radio" value="Male" onchange="selectgender(this.value)">
+                            <input type="radio" checked="checked" name="gender" value="Male" onchange="selectgender(this.value)">
                             <span class="checkmarkM"></span>
                         </label>
                         <label class="container"> <span class="FemaleTT">Female</span>
-                            <input type="radio" name="radio" value="Female" onchange="selectgender(this.value)">
+                            <input type="radio" name="gender" value="Female" onchange="selectgender(this.value)">
                             <span class="checkmarkF"></span>
                         </label>
                     </div>
                     <div class="inputBoxBD">
                         <span class="HBD">Date of Birth</span>
-                        <input type="date" name="birthday" id="birthday">
+                        <input type="date" name="bd" id="birthday">
                     </div>
                     <div class="inputBox-pet">
-                         <select onchange="selectpet()" id ="Pettype">
+                         <select onchange="selectpet()" id ="Pettype" name="Pettype">
                              <option value="Dog"> Dog </option>
                              <option value="Cat"> Cat </option>
                              <option value="Fish"> Fish </option>
@@ -122,11 +122,11 @@
                     </div>
                     <div class="inputBoxpass">
                         <span class="dataP">Password</span>
-                        <input class="pass" type="password" name="pass" placeholder="Enter your Password." required>
+                        <input class="pass" type="password" name="password" placeholder="Enter your Password." required>
                     </div>
                     <div class="inputBoxconfirmpass">
                         <span class="dataC">Confirm Password</span>
-                        <input class="confirmpass" type="password" name="confirmpass" placeholder="Confirm Password."
+                        <input class="confirmpass" type="password" name="confirmpassword" placeholder="Confirm Password."
                             required>
                     </div>
                     <img src="./Images/SignUp/cut_tree 1.svg" alt="pic3" class="pic3">
