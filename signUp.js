@@ -25,7 +25,9 @@ function pageLoad(){
     if(urlParams.get("error") ==1){
         if(window.location.href.split('/').pop()== "signUp.html"){
             document.getElementById('errordisplay').innerHTML = "Registration Error!"
-        }
+        }else{
+			alert("Username or password does not match")
+		}
     }
 }
 

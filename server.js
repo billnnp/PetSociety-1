@@ -53,7 +53,7 @@ app.post('/checkLogin',async(req,res) =>{
     let result = await queryDB(sql);
     if(result.length ==0){
         console.log("false")
-        return res.redirect('LogIn.html')
+        return res.redirect('LogIn.html?error=1')
     }
     else if(userForm == result[0].username && passForm == result[0].password){
         res.cookie('username',userForm)
