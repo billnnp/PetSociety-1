@@ -129,7 +129,15 @@ app.post('/writepost',async(req,res) =>{
     res.json(result);
     console.log(result)
     console.log(req.body)
-    // console.log(req.cookies.username)
+    
+})
+
+app.post("/postprofile",async(req,res)=>{
+    let sql = `SELECT username,password,email FROM register_for_petsociety.userinfo WHERE username="${req.cookies.username}"`;
+    let result = await queryDB(sql);
+    result = Object.assign({},result);
+    console.log(result[0].username);
+    res.json(result[0]);
 })
 
 app.get('/readpost', async(req,res)=>{

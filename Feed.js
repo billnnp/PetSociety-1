@@ -45,17 +45,7 @@ function pageLoad(){
 
   function fileUpload(){
 	document.getElementById('fileField').click();
-  // console.log(document.getElementById('fileField'))
-  // const response = await fetch("/updatepic",{
-  //   method: "POST",
-  //   headers:{
-  //     'Accept':'application/json',
-  //     'Content-Type':'application/json'
-  //   },
-  //   body: JSON.stringify({
-  //     img: getCookie("img"),
-  //    username: getCookie("username")})
-  // });
+  
   }
 
   function fileSubmit(){
@@ -95,7 +85,7 @@ function pageLoad(){
     // showpost(content);
     readpost();
   }
-
+ 
   function showpost(data){
     var keys = Object.keys(data);
     var divTag = document.getElementById("feedpost_container");
