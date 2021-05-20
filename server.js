@@ -124,8 +124,16 @@ app.post('/writepost',async(req,res) =>{
     result = await queryDB(sql);
     result = Object.assign({},result);
     res.json(result);
+    console.log(result)
 })
 
+app.get('/readpost',async(req,res)=>{
+    let sql = `SELECT username, img FROM register_for_petsociety.userinfo`;
+    let result = await queryDB(sql);
+    result = Object.assign({},result);
+    res.json(result);
+
+})
 
 app.get('/readpost', async(req,res)=>{
     let sql = `SELECT username, post FROM register_for_petsociety.postinfo`;

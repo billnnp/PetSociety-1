@@ -72,7 +72,6 @@ function pageLoad(){
   }
 
   async function writepost(message){
-    console.log("Send txt to server");
     const response = await fetch("/writepost",{
       method: "POST",
       headers:{
@@ -83,7 +82,6 @@ function pageLoad(){
        post:message})
     })
     const content = await response.json();
-    console.log(content)
     showpost(content);
   }
 
@@ -111,7 +109,7 @@ function pageLoad(){
 
       var Pic = document.createElement("img");
       Pic.className = "Picinpostbox";
-      Pic.src = getCookie('img');
+      Pic.src = data[keys[i]]["img"];
       createbox.appendChild(Pic);
       
     }
