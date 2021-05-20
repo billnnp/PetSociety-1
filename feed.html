@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,53 +9,60 @@
     <link rel="stylesheet" href="./Feed.css">
     <script type="text/javascript" src="Feed.js"></script>
 </head>
+
 <body>
     <div class="left">
         <div class="fix">
-                <div class="tag" ></div>
-                <div >
-                    <img id="ImgProfile" src="IMG_2572.JPG" alt="image">
-                </div>
-                    <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data"> 
-                        <input type="file" id="fileField" name="Mypic" value="fileToUpload" placeholder="" hidden>
-                    </form>
-                <h1 class="Name" id="username">Jimmy</h1>
-                <div class="FL">
-                    <span class="Followers" >Followers</span> &nbsp; <span class="count" > 1,050 </span>
-                </div>
-                <div class="line" ></div>
-                <img class="feed" src="./Images/Feed/icons8-news-feed-52.png" alt="">
-                <a class="home" href="">Home</a>
-                <img class="user" src="./Images/Feed/user.png" alt="">
-                <a class="my" href="">My</a>
-                <img class="chat" src="./Images/Feed/icons8-chat-60.png" alt="">
-                <a class="chatt" href="">Chat</a>
-                <button class="BTPost" onclick="togglePopup()" >Post</button>
-                <img class="BTPost_editIMG" src="./Images/Feed/edit.png" alt=""> 
+            <div class="tag"></div>
+            <div>
+                <img id="ImgProfile" src="IMG_2572.JPG" alt="image">
+            </div>
+            <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+                <input type="file" id="fileField" name="Mypic" value="fileToUpload" placeholder="" hidden>
+            </form>
+            <h1 class="Name" id="username">Jimmy</h1>
+            <div class="FL">
+                <span class="Followers">Followers</span> &nbsp; <span class="count"> 1,050 </span>
+            </div>
+            <div class="line"></div>
+            <img class="feed" src="./Images/Feed/icons8-news-feed-52.png" alt="">
+            <a class="home" href="">Home</a>
+            <img class="user" src="./Images/Feed/user.png" alt="">
+            <a class="my" href="">My</a>
+            <img class="chat" src="./Images/Feed/icons8-chat-60.png" alt="">
+            <a class="chatt" href="">Chat</a>
+            <button class="BTPost" onclick="togglePopup()">Post</button>
+            <img class="BTPost_editIMG" src="./Images/Feed/edit.png" alt="">
         </div>
     </div>
-    <div class="right" id= "feedpost_container">
-    <div class="FeedDetials">
-        <div class="SocialBox"></div>
-        <img class="imgUser" src="./Images/Feed/teenager 1.png" alt="">
-        <div class="NameUser" >
-            <h5 class="name" >Amber</h5> <h5 class="lastname" >Lukie</h5>
+    <div class="right" id="feedpost_container">
+        <div class="FeedDetials">
+            <div class="SocialBox">
+                <h1 id="PostAny">Click "Post" to Write Something</h1>
+            </div>
+            <img class="imgUser" src="./Images/Feed/teenager 1.png" alt="">
+            <div class="NameUser">
+                <h5 class="name">Amber</h5>
+                <h5 class="lastname">Lukie</h5>
+                <button class="heart" type="button"></button>
+                <button class="comment">Comment</button>
 
+            </div>
+            <!-- <button class="heart" type="button"></button>
+            <button class="comment">Comment</button> -->
         </div>
-        <button class="heart" type="button" ></button>
-        <button class="comment" >Comment</button>
-    </div>
 
     </div>
 
     <div class="popup" id="popup-1">
         <div class="overlay"></div>
         <div class="content">
-          <div class="close-btn" onclick="togglePopup()">×</div>
-          <textarea placeholder="write something..." name="post" id="post" cols="30" rows="10"></textarea>
-          <button id = "postbtn" type="button" >post</button>
+            <div class="close-btn" onclick="togglePopup()">×</div>
+            <textarea placeholder="write something..." name="post" id="post" cols="30" rows="10"></textarea>
+            <button id="postbtn" type="button">post</button>
         </div>
     </div>
-       
+
 </body>
+
 </html>
