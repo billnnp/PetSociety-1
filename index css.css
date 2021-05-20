@@ -18,7 +18,7 @@ body {
 .navbar {
   box-shadow: 1px 1px 5px black;
   background-color: #e4d99e;
-  opacity: 90%;
+  /* opacity: 90%;
   width: 100%;
   height: 10%;
   margin: auto;
@@ -27,31 +27,31 @@ body {
   position: fixed;
   top: 0;
   z-index: 100;
-  padding-left: 7%;
+  padding-left: 7%; */
 }
-.logo {
+/* .logo {
   width: 50px;
   cursor: pointer;
-}
-nav {
+} */
+/* nav {
   flex: 1;
   padding-left: 500px;
   padding-top: 20px;
-}
-nav ul li {
+} */
+/* nav ul li {
   text-align: center;
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: inline-block;
   list-style: none;
   margin: 0px 30px;
-}
-nav ul li a {
+} */
+/* nav ul li a {
   text-decoration: none;
   color: #333;
-}
+} */
 
-.BTlogin button {
+.BTlogin{
   border: none;
   background: none;
 
@@ -62,10 +62,10 @@ nav ul li a {
   box-sizing: border-box;
   border-radius: 20px;
 }
-.BTlogin button:hover {
+.BTlogin:hover {
   background: #bf764c;
 }
-.BTsignup button {
+.BTsignup{
   border: none;
   width: 87px;
   height: 39px;
@@ -75,12 +75,12 @@ nav ul li a {
   box-sizing: border-box;
   border-radius: 20px;
 }
-.BTsignup button:hover {
+.BTsignup:hover {
   background-color: #bf764c;
 }
-.BTSIGNup button {
+.BTSIGNup{
   border: none;
-  position: absolute;
+  /* position: absolute; */
   width: 200px;
   height: 60px;
   left: 171px;
@@ -90,12 +90,12 @@ nav ul li a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 }
-.BTSIGNup button:hover {
+.BTSIGNup:hover {
   background: #be6e40;
   width: 210px;
   height: 70px;
 }
-.BTSIGNup button {
+.BTSIGNup{
   color: #456252;
   font-style: normal;
   font-weight: bold;
@@ -104,13 +104,13 @@ nav ul li a {
   top: 70%;
 }
 
-#Society {
+/* #Society {
   width: 90%;
   margin-left: 15%;
   margin-right: 5%;
   margin-top: 10%;
   padding-bottom: 10%;
-}
+} */
 
 #Story{
   padding-top: 30%;
