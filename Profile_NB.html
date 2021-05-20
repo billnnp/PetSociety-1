@@ -15,13 +15,18 @@
     />
 
     <div class="center">
+
       <div class="Rectangle_B"></div>
+      <a href="./index.html"> <img class="BThome" src="../PetSociety/Images/Profile/home.svg" alt=""></a>
       <img class="profile" src="./Images/Profile/Profile pic.svg" alt="" />
       <a class="edit-profile" href=""
         ><img src="./Images/Profile/edit_button.svg" alt=""
       /></a>
 
-      <div class="edit_name"><h1 class="Name" >Jimmy</h1><h1 class="Lastname" >Lonely</h1></div>
+      <div class="edit_name">
+        <h1 class="Name">Jimmy</h1>
+        <h1 class="Lastname">Lonely</h1>
+      </div>
       <!-- <a class="edit-namee" href=""
         ><img src="./Images/Profile/edit.svg" alt=""
       /></a> -->
@@ -30,33 +35,89 @@
     </div>
     <div class="Pet">
       <img class="pic1" src="./Images/Profile/pupu.png" alt="" />
-      <div class="box1"><p>Name : 연탄 <br>
-        Type : Dog (Pomeranian)</p></div>
+      <div class="box1">
+        <p>
+          Name : 연탄 <br />
+          Type : Dog
+        </p>
+      </div>
       <a class="edit--1" href=""
         ><img src="./Images/Profile/edit.svg" alt=""
       /></a>
 
       <img class="pic2" src="./Images/Profile/Hedgehog .png" alt="" />
-      <div class="box2"><p>Name : PhungPhong <br>
-        Type : Hedgehog (Atelerix algirus)</p></div>
+      <div class="box2">
+        <p>
+          Name : PhungPhong <br />
+          Type : Hedgehog
+        </p>
+      </div>
       <a class="edit--2" href=""
-      ><img src="./Images/Profile/edit.svg" alt=""
-    /></a>
+        ><img src="./Images/Profile/edit.svg" alt=""
+      /></a>
 
-      <a class="Plus" href=""><img src="./Images/Profile/plus 1.svg" alt=""></a>
+      <a class="Plus" href=""
+        ><img src="./Images/Profile/plus 1.svg" alt=""
+      /></a>
     </div>
 
-    <div class="User" >
+    <div class="User">
       <form>
-      <div class="box-1"><img src="./Images/Profile/icon-user.png" alt=""><p id="user">Jimmy_555</p></div>
+        <div class="box-1">
+          <img src="./Images/Profile/icon-user.png" alt="" />
+          <p id="user">Jimmy_555</p>
+        </div>
 
-      <div class="box-2" ><img src="./Images/Profile/icon-pass.png" alt=""><p id="password">*****</p></div>
- 
-      <div class="box-3" ><img src="./Images/Profile/icon-mail.png" alt=""><p id="email">Jimmy555@mail.com</p></div>
-    </form>
+        <div class="box-2">
+          <img src="./Images/Profile/icon-pass.png" alt="" />
+          <p id="password">*****</p>
+        </div>
 
-      <button class="BTedit" >Edit Profile</button>
-    </div> 
-    <script type="text/javascript" src="Profile.js"></script> 
+        <div class="box-3">
+          <img src="./Images/Profile/icon-mail.png" alt="" />
+          <p id="email">Jimmy555@mail.com</p>
+        </div>
+      </form>
+
+      <button class="BTedit" onclick="togglePopup()">Edit Profile</button>
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">×</div>
+          <form>
+            <div class="EditUser">
+              <label for="Username">Username : </label>
+              <input
+                type="text"
+                placeholder="Enter your new Username.."
+                name="Eusername"
+                id="Eusername"
+              />
+            </div>
+            <div class="EditPass">
+              <label for="Password">Password : </label>
+              <input
+                type="password"
+                placeholder="Enter your new Password.."
+                name="Epassword"
+                id="Epassword"
+              />
+            </div>
+            <div class="EditEmail">
+              <label for="Email">E-mail : </label>
+              <input
+                type="email"
+                placeholder="Enter your new E-mail.."
+                name="Eemail"
+                id="Eemail"
+              />
+            </div>
+
+            <button id="confirmbtn" type="button">Confirm</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="Profile.js"></script>
   </body>
 </html>

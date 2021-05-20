@@ -1,8 +1,8 @@
 function checkcookie() {
-    var username = "";
-    if (getCookie("username") == false) {
-        window.location = "login.html";
-    }
+    // var username = "";
+    // if (getCookie("username") == false) {
+    //     window.location = "login.html";
+    // }
 }
 checkcookie();
 
@@ -46,3 +46,8 @@ function showdata(data) {
     var emailbox = document.getElementById("email")
     emailbox.innerHTML = data.email;
 }
+
+//   pop up
+function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+  }
