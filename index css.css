@@ -18,6 +18,7 @@ body {
 .navbar {
   box-shadow: 1px 1px 5px black;
   background-color: #e4d99e;
+  opacity: 90%;
   /* opacity: 90%;
   width: 100%;
   height: 10%;
