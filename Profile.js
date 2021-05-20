@@ -57,3 +57,7 @@ async function editprofile(data) {
     readData();
 
 }
+//   pop up
+function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+  }
