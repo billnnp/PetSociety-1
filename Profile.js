@@ -1,8 +1,8 @@
 function checkcookie() {
-    // var username = "";
-    // if (getCookie("username") == false) {
-    //     window.location = "login.html";
-    // }
+    var username = "";
+    if (getCookie("username") == false) {
+        window.location = "login.html";
+    }
 }
 checkcookie();
 
