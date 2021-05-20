@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <script src="js/bootstrap.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='./index css.css'>
     <title>PET SOCIETY</title>
 </head>
@@ -16,7 +15,7 @@
     <script src="js"></script>
 
     <!-- MenuBar -->
-    <div class="navbar">
+    <!-- <div class="navbar">
         
         <a href="#nav-Home"><img src="./Images/Home/Logo.svg" alt="logo" class="logo"></a>
         <nav>
@@ -29,25 +28,56 @@
             </ul>
         </nav>
 
-    </div>
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./Images/Home/Logo.svg" alt="">
+              </a>
+
+            <form class="d-flex ms-auto order-lg-2">
+                <button type="button" class="BTlogin ms-lg-5">LOG IN</button> 
+                <button type="button" class="BTsignup mx-2 ms-lg-5">SIGN UP</button> 
+            </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mt-2 mb-2 mb-lg-0 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link ms-lg-5"" href="#nav-Home">HOME</a>
+                    </li>
+                    <li class="nav-item ms-lg-5"">
+                        <a class="nav-link" href="#nav-About">ABOUT</a>
+                    </li>
+                    <li class="nav-item ms-lg-5">
+                        <a class="nav-link" href="#nav-Contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
     <!--MenuBar-->
 
     <!--Home-->
-    <div class="Box1" id="nav-Home">
+    <div class="Box1 container" id="nav-Home">
         <div class="row">
             <div class="col-md-6">              
                 
-                    <img id="Society" src="./Images/Home/PetSociety.svg" alt="">
+                    <img id="Society" class="img-fluid" src="./Images/Home/PetSociety.svg" alt="">
                     <!-- <h1>Society of <span id="SpanOrange">PET</span> lovers</h1> -->
                     <!-- <p id="SocietyDetail">
                         Post questions or inquiries about your pet with your friends.<br>
                         Find a friends who loves pets just like you. Society for pet lovers.
                     </p> -->
                     <br>
-                    <div class="BTSIGNup" > <button type="button"> <span>SIGN UP</span></button></div>
-                
+                    <div class="col text-center">
+                        <button type="button" class="BTSIGNup"> <span>SIGN UP</span></button>
+                    </div>
             </div>
-
             <div class="col-md-6">
                 <img id="pic1" src="./Images/Home/pic1-1.png" alt="image">
             </div>
@@ -59,7 +89,7 @@
 
     <!--Story-->
     
-    <div class="Box2" id="nav-About">
+    <div class="Box2 container" id="nav-About">
         <div class="row">
             <div class="col-md-6">
                 <img id="pic4" src="./Images/Home/pic4.png" alt="image">
@@ -83,7 +113,7 @@
     <!--Story-->
 
     <!--Contact-->
-    <div class="Box3" id="nav-Contact" >
+    <div class="Box3 container" id="nav-Contact" >
 
         <div class="row">
             <div class="col-md-6">
@@ -128,13 +158,14 @@
     <footer>
         <br>
         <div class="footer"></div>
-        <p class="footer-1">This Website were reference from
+        <p class="footer-1 mb-0">This Website were reference from
             <a href="https://getbootstrap.com/">www.Getbootstrap.com</a> and
             <a href="https://w3schools.com/">www.w3schools.com</a>
         </p>
     </footer>
     <!--Footer-->
 
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
