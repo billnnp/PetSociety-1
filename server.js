@@ -148,17 +148,21 @@ app.get('/readpost', async(req,res)=>{
 })
 
 app.post('/editprofile', async(req,res) =>{
-    let Eusername,Epassword,Eemail = req.body;
-    let sql = `UPDATE register_for_petsociety.userinfo SET username='${Eusername}', password='${Epassword}', email='${Eemail}' WHERE username = '${username}'`;
+    console.log(req.body)
+    let {username, password, email, oldusername}= req.body
+    let sql = `UPDATE register_for_petsociety.userinfo SET username='${username}', password='${password}', email='${email}' WHERE username = '${oldusername}'`;
+    res.clearCookie("username");
+    res.cookie('username', username, {overwrite: true});
     let result = await queryDB(sql);
+    res.status(200).send(result);
     result = Object.assign({},result);
 })
 
-app.post('/likecount',async(req,res)=>{
-    let sql= `SELECT likecount FROM register_for_petsociety.postinfo WHERE post="${posttxt}"`;
-    let result = await queryDB(sql);
-    result = Object.assign({},result);
-})
+// app.post('/likecount',async(req,res)=>{
+//     let sql= `SELECT likecount FROM register_for_petsociety.postinfo WHERE post="${posttxt}"`;
+//     let result = await queryDB(sql);
+//     result = Object.assign({},result);
+// })
 
 app.listen(port,hostname,()=>{
     console.log(`run : http://${hostname}:${port}/signUp.html `)

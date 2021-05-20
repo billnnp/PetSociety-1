@@ -18,6 +18,10 @@ function getCookie(name){
 	} 
 }
 
+function gotopage(){
+  response.redirect("Profile_NB.html")
+}
+
 //   pop up
 function togglePopup(){
     document.getElementById("popup-1").classList.toggle("active");
@@ -27,16 +31,13 @@ function togglePopup(){
 function pageLoad(){
     document.getElementById('postbtn').onclick = getData;
 
+    document.getElementById('mybtn').onclick = gotopage;
+
     document.getElementById('ImgProfile').onclick = fileUpload;
     document.getElementById('fileField').onchange = fileSubmit;
     
     var username = getCookie('username');
     document.getElementById('username').innerHTML = username;
-
-    // .........
-    // document.getElementById("like").onclick= click();
-    // like(count);
-    // .........
 
 	  showImg(getCookie('img'));
     readpost();
@@ -69,6 +70,7 @@ function pageLoad(){
   async function readpost(){
     const response = await fetch("/readpost");
     const content = await response.json();
+    console.log(getCookie("username"))
     showpost(content);
   }
 
@@ -84,8 +86,6 @@ function pageLoad(){
         img : getCookie("img"),
         username: getCookie("username")})
     })
-    // const content = await response.json();
-    // showpost(content);
     readpost();
   }
  

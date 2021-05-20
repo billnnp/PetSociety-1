@@ -1,0 +1,47 @@
+{
+  "name": "petsociety",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Feed.js",
+  "dependencies": {
+    "anymatch": "^3.1.2",
+    "clone-response": "^1.0.2",
+    "cookie-parser": "^1.4.5",
+    "decompress-response": "^3.3.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "make-dir": "^3.1.0",
+    "mimic-response": "^1.0.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "nopt": "^1.0.10",
+    "normalize-path": "^3.0.0",
+    "normalize-url": "^4.5.0",
+    "p-cancelable": "^1.1.0",
+    "path": "^0.12.7",
+    "picomatch": "^2.2.3",
+    "prepend-http": "^2.0.0",
+    "pupa": "^2.1.1",
+    "readdirp": "^3.5.0",
+    "rejects": "^0.6.2",
+    "resolve": "^1.20.0",
+    "responselike": "^1.0.2",
+    "semver-diff": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hussdin/PetSociety.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hussdin/PetSociety/issues"
+  },
+  "homepage": "https://github.com/Hussdin/PetSociety#readme"
+}
