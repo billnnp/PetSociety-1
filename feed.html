@@ -11,24 +11,26 @@
 <body>
     <div class="left">
         <div class="fix">
-            <div class="tag"></div>
-            <img class="ImgProfile" src="./Images/Feed/icons8-cat-profile-96 1.svg" alt="image">
-            <h1 class="Name" >Jimmy</h1><h1 class="Lastname" >Lonely</h1>
-            <div class="FL">
-                <span class="Followers" >Followers</span> &nbsp; <span class="count" > 1,050 </span>
-            </div>
-            <div class="line" ></div>
-            <img class="feed" src="./Images/Feed/icons8-news-feed-52.png" alt="">
-            <a class="home" href="">Home</a>
-            <img class="user" src="./Images/Feed/user.png" alt="">
-            <a class="my" href="">My</a>
-            <img class="chat" src="./Images/Feed/icons8-chat-60.png" alt="">
-            <a class="chatt" href="">Chat</a>
-            <button class="BTPost" onclick="togglePopup()" >Post</button>
-            <img class="BTPost_editIMG" src="./Images/Feed/edit.png" alt="">
-
-            
-        
+                <div class="tag" ></div>
+                <div >
+                    <img id="ImgProfile" src="IMG_2572.JPG" alt="image">
+                </div>
+                    <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data"> 
+                        <input type="file" id="fileField" name="Mypic" value="fileToUpload" placeholder="" hidden>
+                    </form>
+                <h1 class="Name" id="username">Jimmy</h1>
+                <div class="FL">
+                    <span class="Followers" >Followers</span> &nbsp; <span class="count" > 1,050 </span>
+                </div>
+                <div class="line" ></div>
+                <img class="feed" src="./Images/Feed/icons8-news-feed-52.png" alt="">
+                <a class="home" href="">Home</a>
+                <img class="user" src="./Images/Feed/user.png" alt="">
+                <a class="my" href="">My</a>
+                <img class="chat" src="./Images/Feed/icons8-chat-60.png" alt="">
+                <a class="chatt" href="">Chat</a>
+                <button class="BTPost" onclick="togglePopup()" >Post</button>
+                <img class="BTPost_editIMG" src="./Images/Feed/edit.png" alt=""> 
         </div>
     </div>
     <div class="right" id= "feedpost_container">

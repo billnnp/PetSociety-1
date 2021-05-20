@@ -26,17 +26,43 @@ function togglePopup(){
 
 function pageLoad(){
     document.getElementById('postbtn').onclick = getData;
+
+    document.getElementById('ImgProfile').onclick = fileUpload;
+    document.getElementById('fileField').onchange = fileSubmit;
     
     var username = getCookie('username');
-  
-    document.getElementById("username").innerHTML = username;
-    readPost();
+    document.getElementById('username').innerHTML = username;
+
+	  showImg(getCookie('img'));
+    readpost();
   }
 
   function getData(){
     var message = document.getElementById('post').value;
     document.getElementById('post').value = "";
     writepost(message);
+  }
+
+  function fileUpload(){
+	document.getElementById('fileField').click();
+  }
+
+  function fileSubmit(){
+    document.getElementById('formId').submit();
+  }
+
+  function showImg(filename){
+    console.log(filename);
+    if (filename !==""){
+      // var showpic = document.getElementById('ImgProfile');
+      // showpic.innerHTML = "";
+      // var temp = document.createElement("img");
+      // temp.src = filename;
+      // showpic.appendChild(temp);
+      var newpic = document.getElementById('ImgProfile')
+      newpic.src = filename;
+
+    }
   }
 
   async function readpost(){
@@ -82,24 +108,11 @@ function pageLoad(){
       txtinnerbox.innerHTML = data[keys[i]]["post"];
       
       createbox.appendChild(txtinnerbox);
-      
-      
 
-
-      // var temp = document.createElement("div");
-      // temp.className = "newsfeed";
-      // divTag.appendChild(temp);
-
-      // var temp1 = document.createElement("div");
-      // temp1.className = "postmsg";
-      // temp1.innerHTML = data[keys[i]]["post"];
-      // temp.appendChild(temp1);
-
-      // var temp1 = document.createElement("div");
-      // temp1.className = "postuser";
-      
-      // temp1.innerHTML = "Posted by: "+data[keys[i]]["username"];
-      // temp.appendChild(temp1);
+      var Pic = document.createElement("img");
+      Pic.className = "Picinpostbox";
+      Pic.src = getCookie('img');
+      createbox.appendChild(Pic);
       
     }
   }
