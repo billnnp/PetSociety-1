@@ -386,6 +386,13 @@ a:hover {
   left: 850px;
   top: 230px;
 }
+
+/* for like button */
+#like{
+  text-align: center;
+  width: 50px;
+}
+
 /* ตกแต่ง feed */
 
 @media only screen and (max-width: 800px) {

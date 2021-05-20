@@ -33,6 +33,11 @@ function pageLoad(){
     var username = getCookie('username');
     document.getElementById('username').innerHTML = username;
 
+    // .........
+    // document.getElementById("like").onclick= click();
+    // like(count);
+    // .........
+
 	  showImg(getCookie('img'));
     readpost();
   }
@@ -68,8 +73,6 @@ function pageLoad(){
   }
 
   async function writepost(message){
-    console.log(getCookie("username"))
-    console.log(getCookie("img"))
     const response = await fetch("/writepost",{
       method: "POST",
       headers:{
@@ -114,4 +117,28 @@ function pageLoad(){
       createbox.appendChild(Pic);
       
     }
+// ..................................................................
+    // async function like(count){
+    //   count++;
+    //   const response = await fetch("/likecount",{
+    //     method: "POST",
+    //     headers:{
+    //       'Accept':'application/json',
+    //       'Content-Type':'application/json'
+    //     },
+    //     body: JSON.stringify({
+    //      post:message,
+    //      likecount:count })
+    //   });
+    //   const content = await response.json();
+    //   showlike();
+
+    // }
+    // function click(){
+    //   count++;
+    // }
+    // function showlike(data){
+    //   var likecount = document.getElementById("count");
+    //   likecount.innerHTML = data.likecount;
+    // }
   }

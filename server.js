@@ -136,7 +136,6 @@ app.post("/postprofile",async(req,res)=>{
     let sql = `SELECT username,password,email FROM register_for_petsociety.userinfo WHERE username="${req.cookies.username}"`;
     let result = await queryDB(sql);
     result = Object.assign({},result);
-    console.log(result[0].username);
     res.json(result[0]);
 })
 
@@ -146,6 +145,19 @@ app.get('/readpost', async(req,res)=>{
     result = Object.assign({},result);
     res.json(result);
 
+})
+
+app.post('/editprofile', async(req,res) =>{
+    let Eusername,Epassword,Eemail = req.body;
+    let sql = `UPDATE register_for_petsociety.userinfo SET username='${Eusername}', password='${Epassword}', email='${Eemail}' WHERE username = '${username}'`;
+    let result = await queryDB(sql);
+    result = Object.assign({},result);
+})
+
+app.post('/likecount',async(req,res)=>{
+    let sql= `SELECT likecount FROM register_for_petsociety.postinfo WHERE post="${posttxt}"`;
+    let result = await queryDB(sql);
+    result = Object.assign({},result);
 })
 
 app.listen(port,hostname,()=>{

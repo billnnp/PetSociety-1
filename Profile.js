@@ -5,7 +5,6 @@ function checkcookie() {
     }
 }
 checkcookie();
-
 function getCookie(name) {
     var value = "";
     try {
@@ -16,10 +15,7 @@ function getCookie(name) {
         return false;
     }
 }
-
 readData();
-
-
 async function readData() {
     const response = await fetch("/postprofile", {
         method: "POST",
@@ -31,9 +27,7 @@ async function readData() {
             username: getCookie("username")
         })
     })
-    console.log(response.username);
     const content = await response.json();
-    console.log(content);
     showdata(content);
 }
 
@@ -45,4 +39,21 @@ function showdata(data) {
     passbox.innerHTML = data.password;
     var emailbox = document.getElementById("email")
     emailbox.innerHTML = data.email;
+}
+
+async function editprofile(data) {
+    const response = await fetch("/editprofile", {
+        method: "POST",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            username: getCookie("username")
+        })
+
+    })
+    const content = await response.json();
+    readData();
+
 }
