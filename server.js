@@ -114,29 +114,26 @@ app.post('/profilepic',(req,res) => {
 const updateImg = async (username, filen) => {
     let sql = `UPDATE register_for_petsociety.userinfo SET img = '${filen}' WHERE username = '${username}'`;
     let result = await queryDB(sql);
+    console.log(username);
+    let sql2= `UPDATE postinfo SET img='${filen}' WHERE username='${username}'`
+    let result1 = await queryDB(sql2);
 }
 
 app.post('/writepost',async(req,res) =>{
     let posttxt = req.body.post
-    let sql = `INSERT INTO register_for_petsociety.postinfo (username, post ) VALUES ("${req.cookies.username}", "${posttxt}")`;
+    let sql = `INSERT INTO register_for_petsociety.postinfo (username, post, img ) VALUES ("${req.body.username}", "${posttxt}","${req.body.img}")`;
     let result = await queryDB(sql);
     sql = `SELECT username, post FROM register_for_petsociety.postinfo`;
     result = await queryDB(sql);
     result = Object.assign({},result);
     res.json(result);
     console.log(result)
-})
-
-app.get('/readpost',async(req,res)=>{
-    let sql = `SELECT username, img FROM register_for_petsociety.userinfo`;
-    let result = await queryDB(sql);
-    result = Object.assign({},result);
-    res.json(result);
-
+    console.log(req.body)
+    // console.log(req.cookies.username)
 })
 
 app.get('/readpost', async(req,res)=>{
-    let sql = `SELECT username, post FROM register_for_petsociety.postinfo`;
+    let sql = `SELECT username, post ,img FROM register_for_petsociety.postinfo`;
     let result = await queryDB(sql);
     result = Object.assign({},result);
     res.json(result);

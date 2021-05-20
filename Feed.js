@@ -45,23 +45,29 @@ function pageLoad(){
 
   function fileUpload(){
 	document.getElementById('fileField').click();
+  // console.log(document.getElementById('fileField'))
+  // const response = await fetch("/updatepic",{
+  //   method: "POST",
+  //   headers:{
+  //     'Accept':'application/json',
+  //     'Content-Type':'application/json'
+  //   },
+  //   body: JSON.stringify({
+  //     img: getCookie("img"),
+  //    username: getCookie("username")})
+  // });
   }
 
   function fileSubmit(){
     document.getElementById('formId').submit();
   }
 
-  function showImg(filename){
+   function showImg(filename){
     console.log(filename);
+    
     if (filename !==""){
-      // var showpic = document.getElementById('ImgProfile');
-      // showpic.innerHTML = "";
-      // var temp = document.createElement("img");
-      // temp.src = filename;
-      // showpic.appendChild(temp);
       var newpic = document.getElementById('ImgProfile')
       newpic.src = filename;
-
     }
   }
 
@@ -72,6 +78,8 @@ function pageLoad(){
   }
 
   async function writepost(message){
+    console.log(getCookie("username"))
+    console.log(getCookie("img"))
     const response = await fetch("/writepost",{
       method: "POST",
       headers:{
@@ -79,10 +87,13 @@ function pageLoad(){
         'Content-Type':'application/json'
       },
       body: JSON.stringify({
-       post:message})
+       post:message,
+        img : getCookie("img"),
+        username: getCookie("username")})
     })
-    const content = await response.json();
-    showpost(content);
+    // const content = await response.json();
+    // showpost(content);
+    readpost();
   }
 
   function showpost(data){
