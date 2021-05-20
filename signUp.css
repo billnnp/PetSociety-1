@@ -12,8 +12,8 @@ body {
   font-style: normal;
   font-weight: normal;
   position: relative;
-  width: 1152px;
-  height: 700px;
+  width: 100%;
+  
 
   background: #e4d99e;
 }
@@ -494,4 +494,23 @@ input:placeholder-shown {
 }
 .confirmpass{
   text-align: center;
+}
+@media only screen and (max-width:768px){
+  .pic1 {
+    /* height: 100vh; */
+    display: none;
+  }
+  .Read{
+    display: none;
+  }
+  .pic3{
+    display: none;
+  }
+  .right {
+    position: absolute;
+    left: -99%;
+    
+  }
+  
+  
 }
