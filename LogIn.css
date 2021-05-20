@@ -203,3 +203,218 @@ input{
 .create a:hover{
     color: #d3a123;
 }
+@media only screen and (max-width: 768px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        /* position: relative; */
+        width: 100%;
+    
+        background-color: #E4D99E;
+    
+        font-family: "Roboto", sans-serif;
+    }
+    div.imgBG{
+        /* display: none; */
+    }
+    .imgBG .pic1{
+        position: absolute;
+        width: 20%;
+     /* display: none; */
+    }
+    .imgBG .pic2{
+        position: absolute;
+        width: 20%;
+        left: 123%;
+        top: 253%;
+        z-index: 100;
+        /* display: none; */
+    }
+    .imgBG .pic3{
+        position: absolute;
+        width: 20%;
+        /* height: 131px; */
+        left: 0%;
+        top: 160%;
+        z-index: 100;
+        /* display: none; */
+    }
+    .imgBG .pic4{
+        position: absolute;
+        width: 20%;
+        /* height: 131px; */
+        left: 123%;
+        z-index: 100;
+        top: 10%;
+        /* display: none; */
+    }
+    .Title{
+        position: relative;
+        width: 100%;
+        left: 27%;
+        top: 95px;
+        text-align: center;
+        z-index: 1;
+    }
+    hr{
+        position: absolute;
+        border: none;
+        width: 550px;
+        height: 780px;
+        left: 8.5%;
+        top: 150px;
+        right: 0%;
+    
+        background: #BF764C;
+        border-radius: 58px;
+    }
+    input{
+        border: none;
+        
+        width: 300px;
+        height: 50px;
+    
+        background: #ffff;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        z-index: 100;
+    
+    }
+    
+    .uername .usern {
+        position: absolute;
+        left: 40%;
+        top: 70%;
+        
+    
+    }
+    .usern{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    .dataUserN{
+        position: absolute;
+        width: 320px;
+        height: 68px;
+        left: 66%;
+        top: 55%;
+        z-index: 100;
+    
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: rgba(0, 0, 0, 0.5);
+    
+    }
+    .passW .passw{
+       
+        position: absolute;
+        left: 40%;
+        top: 100%;
+    }
+    .passw{
+        font-size: 20px;
+        text-align: center;
+    }
+    .datapass{
+        position: absolute;
+        width: 320px;
+        height: 68px;
+        left: 66%;
+        top: 85%;
+    
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: rgba(0, 0, 0, 0.5);
+    
+    }
+    :placeholder-shown{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: rgba(0, 0, 0, 0.24);
+    
+    }
+    .BT input{
+    
+        border: none;
+        position: absolute;
+        width: 150px;
+        height: 60px;
+        left: 58%;
+        top: 110%;
+        margin-top: 60px;
+        color: #BF764C;
+        background: #E0A538;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 70px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .BT input:hover{
+        background-color: #df950c;
+        color: #bb5519;
+        width: 160px;
+        height: 70px;
+        z-index: 101;
+    }
+    .picPeople img{
+        position: absolute;
+        width: 120%;
+        /* width: 608.61px;
+        height: 248px; */
+        left: 15%;
+        top: 204%;
+        z-index: 100;
+        
+        
+    }
+    .create span{
+        position: absolute;
+        width: 205px;
+        height: 47px;
+        left: 53%;
+        top: 150%;
+        /* top: 540px; */
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        color: #D3BC81;
+        
+    }
+    .create a{
+        color: #D3BC81;
+    }
+    .create a:hover{
+        color: #d3a123;
+    }
+
+}
