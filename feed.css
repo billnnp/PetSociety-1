@@ -149,6 +149,26 @@ a:hover {
   top: 292.39px;
   border: 0.5px solid rgba(234, 223, 207, 0.7);
 }
+.fix .BTout {
+  position: absolute;
+  width: 194px;
+  height: 76px;
+  left: 77px;
+  top: 610px;
+
+  background: #dda667;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #c57b26;
+}
+.BTout:hover {
+  background: #e08e23;
+}
 .fix .BTPost {
   position: absolute;
   width: 194px;
